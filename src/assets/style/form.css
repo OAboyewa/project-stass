@@ -1,0 +1,15 @@
+
+.dialog {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+form {
+    width: 512px;
+    padding: 20px;
+    background: black;
+}
