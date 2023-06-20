@@ -6,10 +6,19 @@ import './App.css'
 import RequestForm from '/src/assets/form/RequetForm.jsx'
 
 function App() {
+  const [dialog, setDialog] =  useState(false);
+
+  function DialogHandler() {
+    let mDialog = dialog;
+    setDialog(mDialog = !mDialog); 
+  }
 
   return (
     <>
-      <RequestForm></RequestForm>
+      <button type="button" onClick={DialogHandler}>Request</button>
+      { 
+        <RequestForm dialog={dialog} closeButtonHandler={DialogHandler}></RequestForm>
+      }
     </>
   )
 }
