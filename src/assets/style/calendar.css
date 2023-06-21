@@ -1,0 +1,38 @@
+
+.cell {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 10px;
+    margin: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: greenyellow;
+
+    color: black;
+}
+
+.header {
+    min-width: 100px;
+    min-height: 50px;
+    padding: 10px;
+    margin: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 500;
+    background: green;
+}
+
+.month {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.headers-cnt {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}

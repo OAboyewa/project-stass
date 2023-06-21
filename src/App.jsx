@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import RequestForm from '/src/assets/form/RequetForm.jsx'
+import Calendar from '/src/assets/component/Calendar.jsx';
 
 function App() {
   const [dialog, setDialog] =  useState(false);
@@ -19,6 +20,7 @@ function App() {
       { 
         <RequestForm dialog={dialog} closeButtonHandler={DialogHandler}></RequestForm>
       }
+      <Calendar></Calendar>
     </>
   )
 }
