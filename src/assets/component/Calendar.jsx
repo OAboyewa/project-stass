@@ -9,32 +9,19 @@ import Month from '/src/assets/component/Month.jsx';
 */
 
 function Calendar() {
-    const[countYear, setCountYear] = useState(new Date().getFullYear());
-    const[count, setCount] = useState(new Date().getMonth());
-    const[monthElement, setmonthElement] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
-    const nameOfMonths = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-    useEffect(() => {
-        setmonthElement(monthElement.map((value, index) => <Month key={index} year={countYear} month={value}></Month>));
-    }, [countYear]);
+    const[year, setYear] = useState(2023);
+    const[month, setMonth] = useState(1);
+    const monthNames = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     function HandlerPreviousMonth() {
-        if (count === 0) {
-            setCount(11);
-            setCountYear(countYear - 1)
-        }
-        if (count > 0) {
-            setCount(count - 1);
+        if (month > 1) {
+            setMonth(month - 1);
         }
     }
 
     function HandlerNextMonth() {
-        if (count === 11) {
-            setCount(0);
-            setCountYear(countYear + 1)
-        }
-        if (count < 11) {
-            setCount(count + 1);
+        if (month < 12) {
+            setMonth(month + 1);
         }
     }
 
@@ -42,11 +29,11 @@ function Calendar() {
         <div>
             <div>
                 <button type="button" onClick={HandlerPreviousMonth}>-</button>
-                <span>{nameOfMonths[count]} {countYear}</span>
+                <span>{monthNames[month - 1]} {year}</span>
                 <button type="button" onClick={HandlerNextMonth}>+</button>
             </div>
             <div>
-                {monthElement[count]}
+                <Month year={year} month={month} overlapMonths={false}></Month>
             </div>
         </div>
     )
