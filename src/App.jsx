@@ -16,11 +16,22 @@ function App() {
 
   return (
     <>
-      <button type="button" onClick={DialogHandler}>Request</button>
+      <div className="nav-cnt">
+        <button type="button" onClick={DialogHandler}>Request</button>
+      </div>
+      <div className="main-cnt">
+        <div className="main-sidebar-cnt">
+          <a className="" href="#">
+            <span>Planner</span>
+          </a>
+        </div>
+        <div className="main-viewport-cnt">
+          <Calendar></Calendar>
+        </div>
+      </div>
       { 
         <RequestForm dialog={dialog} closeButtonHandler={DialogHandler}></RequestForm>
       }
-      <Calendar></Calendar>
     </>
   )
 }
