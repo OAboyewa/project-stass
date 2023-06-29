@@ -1,0 +1,28 @@
+
+.requestentry-cnt {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    border: solid lightblue;
+    padding: 0;
+    margin: 0;
+}
+
+.requestentry-cnt p {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.requestentry-cnt > p:nth-child(2) span {
+    display: block;
+}
+
+.requestentry-cnt > p:nth-child(2) {
+    padding-right: 100px;
+    flex-grow: 2;
+}
+
+.requestentry-cnt > p:nth-child(3) {
+    border: solid lightcoral;
+}
+

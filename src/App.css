@@ -26,11 +26,32 @@
   border: solid white;
 }
 
+/*--Sidebar--*/
+
 .main-sidebar-cnt {
   max-width: 15%;
   width: 15%;
   border: solid blue;
 }
+
+.a-btn {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: solid yellow;
+  text-decoration: none;
+  color: white;
+}
+
+.a-btn:hover {
+  color: gray;
+}
+
+/*----*/
+
 
 .main-viewport-cnt{
   max-width: 85%;

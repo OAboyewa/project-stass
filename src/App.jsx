@@ -5,6 +5,7 @@ import './App.css'
 
 import RequestForm from '/src/assets/form/RequetForm.jsx'
 import Calendar from '/src/assets/component/Calendar.jsx';
+import LatestRequest from '/src/assets/component/LatestRequest.jsx'
 
 function App() {
   const [dialog, setDialog] =  useState(false);
@@ -21,12 +22,13 @@ function App() {
       </div>
       <div className="main-cnt">
         <div className="main-sidebar-cnt">
-          <a className="" href="#">
+          <a className="a-btn" href="#">
             <span>Planner</span>
           </a>
         </div>
         <div className="main-viewport-cnt">
           <Calendar></Calendar>
+          <LatestRequest></LatestRequest>
         </div>
       </div>
       { 
