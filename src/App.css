@@ -8,10 +8,14 @@
 
 .nav-cnt {
   box-sizing: border-box;
-    width: 100%;
-    min-height: 50px;
-    height: 50px;
-    border: solid red;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column: 1 / 4;
 }
 
 /*----*/
@@ -21,6 +25,7 @@
   display: flex;
   flex-flow: row nowrap;
   min-width: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   border: solid white;
@@ -54,7 +59,60 @@
 
 
 .main-viewport-cnt{
+  box-sizing: border-box;
   max-width: 85%;
   width: 85%;
+  padding: 15px;
   border: solid rebeccapurple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
+  gap: 1em;
+}
+
+/*----*/
+
+.welcome-cnt {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: gray;
+  grid-column: 1 / 4;
+}
+
+.welcome-cnt > div img {
+  max-width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*----*/
+
+.stat-tracker-cnt {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 5px;
+  background: gray;
+  grid-column: 1 / 3;
+}
+
+.stat-tracker-cnt > div:nth-child(1) {
+  
+}
+
+/*----*/
+
+.employee-off-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  background: gray;
+  grid-column: 3 / 4;
+  grid-row: 3 / 5;
 }

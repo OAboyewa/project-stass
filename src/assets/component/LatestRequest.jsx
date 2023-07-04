@@ -3,12 +3,12 @@ import RequestEntry from "./RequestEntry";
 
 function LatestRequest() {
     return(
-        <div>
+        <div className="latestrequest-cnt">
             <p>Latest request</p>
-            <div>
-                <div>
-                    <RequestEntry startDate="29/06/23" title="Annual Leave" duration="5" approalStatus="Pending"></RequestEntry>
-                </div>
+            <div className="latestrequest-entry-cnt">
+                <RequestEntry startDate="29/06/23" title="Annual Leave" duration="5" approalStatus="Pending"></RequestEntry>
+                <RequestEntry startDate="29/06/23" title="Annual Leave" duration="5" approalStatus="Pending"></RequestEntry>
+                <RequestEntry startDate="29/06/23" title="Annual Leave" duration="5" approalStatus="Pending"></RequestEntry>
             </div>
         </div>
     );

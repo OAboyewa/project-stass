@@ -8,7 +8,9 @@ function RequestEntry({startDate, title, duration, approalStatus}) {
                 <span>{title}</span>
                 <span>{duration} Days</span>
             </p>
-            <p>{approalStatus}</p>
+            <p>
+                <span>{approalStatus}</span>
+            </p>
         </div>
     );
 }
