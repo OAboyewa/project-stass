@@ -2,7 +2,7 @@ import "/src/assets/style/latest-request.css";
 
 function RequestEntry({startDate, title, duration, approalStatus}) {
     return(
-        <div className="requestentry-cnt">
+        <td className="requestentry-cnt">
             <p>{startDate}</p>
             <p>
                 <span>{title}</span>
@@ -11,7 +11,7 @@ function RequestEntry({startDate, title, duration, approalStatus}) {
             <p>
                 <span>{approalStatus}</span>
             </p>
-        </div>
+        </td>
     );
 }
 

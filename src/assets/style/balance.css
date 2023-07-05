@@ -12,13 +12,13 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background:whitesmoke;
+    background:#F4E0D9;
     flex-grow: 1;
 }
 
 .balance-cnt img {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
 }
 
 .heading {
@@ -31,7 +31,6 @@
 
 .sub-heading {
     font-size: 46px;
-    font-weight: 700;
     text-align: center;
     color: black;
     margin: 0;

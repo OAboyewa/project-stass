@@ -1,9 +1,15 @@
 /*LatestRequest*/
 .latestrequest-cnt {
     box-sizing: border-box;
-    /*max-width: 500px;*/
-    border: solid lightgoldenrodyellow;
-    grid-column: 1 / 3;
+    border-radius: 5px;
+    grid-column: 1 / 2;
+}
+
+.latestrequest-cnt > tr:nth-child(1) {
+    font-size: 22px;
+    font-weight: 400px;
+    text-align: left;
+    color: black;
 }
 
 .latestrequest-entry-cnt {
@@ -18,11 +24,12 @@
     height: 100px;
     display: flex;
     flex-flow: row nowrap;
-    border: solid lightblue;
-    padding: 0;
-    margin-bottom: 10px;
-    background-color: black;
-}
+    padding-right: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: black;
+    background-color: #F4E0D9;
+} 
 
 .requestentry-cnt p {
     padding: 0 20px;
@@ -38,7 +45,13 @@
     flex-grow: 2;
 }
 
+.requestentry-cnt > p:nth-child(2) > span:first-child {
+    font-weight: 600;
+}
+
 .requestentry-cnt > p:nth-child(3) {
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    background-color: yellow;
 }
