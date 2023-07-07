@@ -3,6 +3,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     grid-column: 1 / 2;
+    grid-row: 4 / 5;
 }
 
 .latestrequest-cnt > tr:nth-child(1) {
@@ -13,7 +14,6 @@
 }
 
 .latestrequest-entry-cnt {
-    max-height: 300px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -41,7 +41,6 @@
 }
 
 .requestentry-cnt > p:nth-child(2) {
-    padding-right: 100px;
     flex-grow: 2;
 }
 
@@ -53,5 +52,4 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    background-color: yellow;
 }
